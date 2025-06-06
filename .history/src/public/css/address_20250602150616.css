@@ -1,0 +1,97 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header-inner__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.header-inner__search-input {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.header-inner__metastasis {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-inner__metastasis-logout--link {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.header-inner__metastasis-page--link {
+    color: white;
+    text-decoration: none;
+}
+
+.header-inner__metastasis-listing--button {
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.address-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-form__post,
+.address-form__residence,
+.address-form__building{
+    display: flex;
+    flex-direction: column;
+}
+
+.address-form__post-label,
+.address-form__residence-label,
+.address-form__building-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.address-form__post-label-item,
+.address-form__residence-label-item{
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.address-form__button {
+    margin-top: 30px;
+}
+
+.address-form__button-item {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+

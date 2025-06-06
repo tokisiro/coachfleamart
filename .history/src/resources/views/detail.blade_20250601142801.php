@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coachfleamart</title>
+    <link rel="stylesheet" href="/css/sanitize.css">
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+<!--商品詳細画面（ログイン後）-->
+<header class="header">
+    <div class="header__inner">
+        <div class="header-title">
+            <img src="storage/logo.svg" alt="ヘッダーの画像" />
+        </div>
+        <div class="header-inner__search">
+            <input class="header-search__inner-input" type="text">
+        </div>
+        <div class="header-inner__logout">
+            <a class="header-inner__logout-link" href="">
+                ログアウト
+            </a>
+        </div>
+        <div class="header-inner__page">
+            <a class="header-inner__page-link" href="">
+                マイページ
+            </a>
+        </div>
+        <div class="header-inner__listing">
+            <button class="header-inner__listing__button">
+                出品
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="detail">
+        <form class="detail-product" method="post">
+            <div class="detail-product__img">
+                <img src="" alt="商品画像">
+            </div>
+            <div class="detail-product__name">
+                <h3 class="detail-product__name-title">
+                    商品名が入る
+                </h3>
+                <p class="detail-product__name-brand">
+                    ブランド名
+                </p>
+            </div>
+            <div class="detail-product__price">
+
+            </div>
+            <div class="detail-product__evaluation">
+                <div class="detail-product__evaluation-nice">
+                    <button class="detail-product__evaluation-nice--button">
+                        <img src="/storage/star.png" alt="">
+                    </button>
+                    <span class="detail-product__evaluation-nice--count">
+                        0
+                    </span>
+                </div>
+                <div class="detail-product__evaluation-comment">
+                    <div class="detail-product__evaluation-comment--button">
+                        <img src="/storage/comment.png" alt="">
+                    </div>
+                    <span class="detail-product__evaluation-comment--count">
+                        0
+                    </span>
+                </div>
+            </div>
+        </form>
+        <form class="detail-information" action="">
+            <div class="detail-information__button">
+                <a class="detail-information__button-item">
+                    購入手続きへ
+                </a>
+            </div>
+            <div class="detail-information__index">
+                <h3 class="detail-information__index-item">
+                    商品説明
+                </h3>
+            </div>
+            <div class="detail-information__explanation">
+                <div class="detail-information__explanation-item">
+                    <!--商品説明を表示-->
+                </div>
+            </div>
+            <div class="detail-information__index">
+                <h3 class="detail-information__index-item">
+                    商品の情報
+                </h3>
+            </div>
+            <div class="detail-information__category">
+                <label class="detail-information__category-label">
+                    カテゴリー
+                </label>
+                <div class="detail-information__category-item">
+                    <!--カテゴリーを表示-->
+                </div>
+            </div>
+            <div class="detail-information__status">
+                <label class="detail-information__status-label">
+                    商品の状態
+                </label>
+                <div class="detail-information__status-item">
+                    <!--商品の状態を表示-->
+                </div>
+            </div>
+        </form>
+        <form class="detail-comment" action="">
+            <div class="detail-comment__index">
+                <h3 class="detail-comment__index-item">
+                    コメント()
+                </h3>
+            </div>
+            <div class="detail-comment__existing">
+                <div class="detail-comment__existing-icon">
+                    <label><img src="" alt="アイコン"><!--ユーザー名--></label>
+                </div>
+                <div class="detail-comment__existing-message">
+                    <!--コメント表示-->
+                </div>
+            </div>
+            <div class="detail-comment__new">
+                <label class="detail-comment__new-label">
+                    商品へのコメント
+                    <input type="textarea">
+                </label>
+            </div>
+            <div class="detail-comment__button">
+                <button class="detail-comment__button-item">
+                    コメントを送信する
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

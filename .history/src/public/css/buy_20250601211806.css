@@ -1,0 +1,138 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header-inner__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.header-inner__search-input {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.header-inner__metastasis {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-inner__metastasis-logout--link {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.header-inner__metastasis-page--link {
+    color: white;
+    text-decoration: none;
+}
+
+.header-inner__metastasis-listing--button {
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.buy-content__product{
+    display: flex;
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+.buy-content__product-name--item{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buy-content__product-image{
+    width: 150px;
+    height: 150px;
+    background-color: gainsboro;
+    margin-right: 30px;
+}
+
+.buy-content__delivery,
+.buy-content__payment{
+    display: block;
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.buy-content__payment-label{
+    font-weight: bold;
+}
+
+.buy-content__payment-select-option{
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    border: gainsboro;
+}
+
+.buy-content__delivery-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-content__delivery-item--label{
+    font-weight: bold;
+}
+
+.buy-content__delivery-item{
+    padding: 20px;
+}
+
+.buy-accounting{
+    background-color: antiquewhite;
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.buy-accounting__table {
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.buy-accounting__table-tr{
+    border: 1px solid;
+}
+
+.buy-accounting__button{
+    padding-top: 20px;
+}
+
+.buy-account__button-item{
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    background-color: red;
+    border: none;
+}

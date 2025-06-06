@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coachfleamart</title>
+    <link rel="stylesheet" href="/css/sanitize.css">
+    <link rel="stylesheet" href="/css/address.css">
+</head>
+<body>
+<!--商品購入画面-->
+<header class="header">
+    <div class="header__inner">
+        <div class="header-title">
+            <img src="storage/logo.svg" alt="ヘッダーの画像" />
+        </div>
+        <div class="header-search">
+            <input class="header-search__input" type="text">
+        </div>
+        <div class="header-logout">
+            <a class="header-logout__link" href="">
+                ログアウト
+            </a>
+        </div>
+        <div class="header-page">
+            <a class="header-page__link" href="">
+                マイページ
+            </a>
+        </div>
+        <div class="header-listing">
+            <button class="header-listing__button">
+                出品
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="buy">
+        <div class="buy-content">
+            <div class="buy-content__product">
+                <div class="buy-content__product-image">
+                    <img src="" alt="商品画像">
+                </div>
+                <div class="buy-content__product-name">
+                    <p class="buy-content__product-name--item">
+                        <!--商品名-->
+                    </p>
+                </div>
+                <div class="buy-content__product-price">
+                    <!--値段-->
+                </div>
+            </div>
+            <div class="buy-content__payment">
+                <label class="buy-content__payment-label">
+                    支払い方法
+                </label>
+                <div class="buy-content__payment-input">
+                    <input class="buy-content__payment-input-item" type="select">
+                </div>
+            </div>
+            <div class="buy-content__delivery">
+                <label class="buy-content__delivery-label">
+                    配送先
+                </label>
+                いんで
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

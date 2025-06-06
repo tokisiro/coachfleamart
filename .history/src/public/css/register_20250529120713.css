@@ -1,0 +1,22 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-title {
+    padding: 5px;
+}
+
+.register-title{
+    text-align: center;
+}
+
+.register-form{
+    text-align: center;
+}
+
+.register-form__name-label,
+.register-form__name-item{
+    display: block;
+    di
+}

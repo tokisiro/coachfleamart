@@ -1,0 +1,48 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-title {
+    padding: 5px;
+}
+
+.register{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+}
+
+.register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form__name,
+.register-form__email,
+.register-form__password,
+.register-form__confirmation,
+.register-form__button{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 450px;
+}
+
+.register-form__name-label,
+.register-form__email-label,
+.register-form__password-label,
+.register-form__confirmation-label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.register-form input{
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+}

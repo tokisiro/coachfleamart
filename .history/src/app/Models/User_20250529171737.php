@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    use HasFactory;
+
+    protected $fillable =['user_name','icon','post_code','address','email','password'];
+
+    // 購入履歴とのリレーション
+    public function userProducts()
+    {
+        return $this->hasMany(UserProduct::class);
+    }
+
+    // コメント
+    public function productComments()
+    {
+        return $this->hasMany(ProductComment::class);
+    }
+
+    // いいね
+    public function nice()
+    {
+        return $this->hasMany(Nice::class);
+    }
+}

@@ -1,0 +1,124 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header__inner{
+    display: flex;
+    align-items:center;
+    padding: 5px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header-inner__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.header-inner__search-input {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.header-inner__metastasis {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-inner__metastasis-logout--link{
+    color: white;
+    text-decoration:none;
+    margin: 20px;
+}
+
+.header-inner__metastasis-page--link{
+    color: white;
+    text-decoration: none;
+}
+
+.header-inner__metastasis-listing--button{
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.setting-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting-form__icon {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+    width: 450px;
+}
+
+.setting-form__icon-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gainsboro;
+}
+
+::file-selector-button,
+::-webkit-file-upload-button{
+    background-color: white;
+}
+
+.setting-form__name,
+.setting-form__post,
+.setting-form__address,
+.setting-form__building,
+.setting-form__button {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 450px;
+}
+
+.setting-form__icon-label
+.setting-form__name-label,
+.setting-form__post-label,
+.setting-form__address-label,
+.setting-form__building-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.setting-form__icon-input,
+.setting-form__name-input,
+.setting-form__post-input,
+.setting-form__address-input,
+.setting-form__building-input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.setting-form__button {
+    margin-top: 30px;
+}
+
+.setting-form__button-item {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}

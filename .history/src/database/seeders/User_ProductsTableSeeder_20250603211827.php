@@ -1,0 +1,32 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class User_ProductsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $userIds = \App\Models\User::pluck('id')->toArray();
+        $productIds = \App\Models\Product::pluck('id')->toArray();
+
+        // 例：50件の購入履歴を作る
+    for ($i = 0; $i < 15; $i++) {
+        \DB::table('user_products')->insert([
+            'user_id' => collect($userIds)->random(),
+            'product_id' => collect($productIds)->random(), // これがポイント
+            'purchase_date' => now()->subDays(rand(1, 365)),
+            'shipping_address' => \Faker\Factory::create()->address(),
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+    }
+}
+}

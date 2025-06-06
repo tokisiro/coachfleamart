@@ -1,0 +1,182 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header-inner__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.header-inner__search-input {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.header-inner__metastasis {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-inner__metastasis-logout--link {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.header-inner__metastasis-page--link {
+    color: white;
+    text-decoration: none;
+}
+
+.header-inner__metastasis-listing--button {
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.sell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sell-img__label{
+    font-weight: bold;
+}
+
+.sell-img__icon{
+    border: 1px solid gainsboro;
+    background-color: transparent;
+    width: 700px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sell-img__icon-item {
+    background-color: transparent;
+}
+
+.sell-img__icon-input {
+    display: none;
+}
+
+.sell-img__icon-button {
+    height: 30px;
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+    padding: 0px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sell-index{
+    text-align: left;
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* 内容を左寄せ */
+        width: 700px;
+        /* 既存の幅に合わせて調整 */
+        margin: 20px;
+        /* 必要に応じて調整 */
+}
+
+.sell-index__item{
+    font-weight: bold;
+    font-size: 20px;
+    color: darkgrey;
+}
+
+.sell-category{
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.sell-category__label-item{
+    font-weight: bold;
+}
+
+
+.sell-category__checkbox-label{
+    margin: 7px;
+
+    color: red;
+        /* 文字色を黒に */
+        font-size: 14px;
+        /* 文字サイズを14pxに */
+        border: 1px solid red;
+        /* 淵の線を指定 */
+        border-radius: 20px;
+        /* 角丸を入れて、左右が丸いボタンにする */
+        padding: 5px 20px;
+        /* 上下左右に余白をトル */
+
+        cursor: pointer;
+            /* カーソルをポインターに */
+            display: inline-block;
+            /* 他のスタイルはそのまま */
+    }
+
+
+.sell-category__checkbox-input{
+    display: none;
+}
+
+.sell-category__checkbox-input:checked + .sell-category__checkbox-label{
+    color: #FFF;
+        /* 文字色を白に */
+        background: red;
+        /* 背景色を薄い赤に */
+        border: 1px solid red;
+        /* 淵の線を薄い赤に */
+}
+
+.sell-status{
+    width: 700px;
+    display: flex;
+        flex-direction: column;
+        /* 縦並び */
+        align-items: flex-start;
+        /* 左寄せ（必要に応じて調整） */
+        gap: 10px;
+        /* 要素間の間隔を調整 */
+}
+
+.sell-status__label,
+.{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.sell-status__select{
+    width: 700px;
+    height: 30px;
+}
+
+.sell-name,
+.sell-brand,
+.sell-explanation,
+.sell-price{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}

@@ -1,0 +1,68 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-title {
+    padding: 5px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form__email,
+.register-form__password,
+.register-form__confirmation,
+.register-form__button {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 450px;
+}
+
+.register-form__name-label,
+.register-form__email-label,
+.register-form__password-label,
+.register-form__confirmation-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.register-form__name-item,
+.register-form__email-item,
+.register-form__password-item,
+.register-form__confirmation-item {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.register-form__button {
+    margin-top: 30px;
+}
+
+.register-form__button-item {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.register-link__login {
+    text-decoration: none;
+    color: blue;
+}

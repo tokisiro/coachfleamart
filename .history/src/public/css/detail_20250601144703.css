@@ -1,0 +1,65 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header-inner__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.header-inner__search-input {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.header-inner__metastasis {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-inner__metastasis-logout--link {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.header-inner__metastasis-page--link {
+    color: white;
+    text-decoration: none;
+}
+
+.header-inner__metastasis-listing--button {
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.detail {
+    display: flex;
+        flex-direction: row;
+        /* 横並び */
+        align-items: flex-start;
+        /* 上揃え */
+        gap: 20px;
+        /* 要素間のスペース（必要なら調整） */
+}
+
+
+
+.detail-product__img {
+    flex: 0 0 auto;
+    /* 画像部分はそのサイズに留める */
+    max-width: 300px;
+    /* 画像の最大幅（必要に応じて調整） */ }

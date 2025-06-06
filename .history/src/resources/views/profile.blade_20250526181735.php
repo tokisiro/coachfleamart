@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coachfleamart</title>
+    <link rel="stylesheet" href="/css/sanitize.css">
+    <link rel="stylesheet" href="/css/address.css">
+</head>
+<body>
+<!--プロフィール設定画面（初回ログイン時）-->
+<header class="header">
+    <div class="header__inner">
+        <div class="header-title">
+            <img src="storage/logo.svg" alt="ヘッダーの画像" />
+        </div>
+    </div>
+</header>
+<main>
+    <div class="profile">
+        <div class="profile-title">
+            <h2 class="profile-title__item">
+                
+            </h2>
+        </div>
+        <div class="profile-form">
+
+        </div>
+
+    </div>
+</main>
+</body>
+</html>
