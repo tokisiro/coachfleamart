@@ -1,0 +1,83 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header-inner__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.header-inner__search-input {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.header-inner__metastasis {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-inner__metastasis-login,
+.header-inner__metastasis-logout--link {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.header-inner__metastasis-page--link {
+    color: white;
+    text-decoration: none;
+}
+
+.header-inner__metastasis-listing--button {
+    width: 50px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.product-recommendation,
+.product-myList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-recommendation__card{
+    width: 360px;
+    margin: 100px auto 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-recommendation__card-img--item{
+    width: 100%;
+}
+
+.product-recommendation__card-content{
+    padding: 15px 25px;
+}
+
+.product-myList__card {
+    width: 360px;
+    margin: 100px auto 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-myList__card-img--item {
+    width: 100%;
+}
+
+.product-myList__card-content {
+    padding: 15px 25px;
+}

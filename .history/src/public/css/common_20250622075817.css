@@ -1,0 +1,9 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-inner__logo {
+    padding: 5px 0p;
+    max-width: 100%;
+}

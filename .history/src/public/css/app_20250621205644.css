@@ -1,0 +1,63 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.header-inner__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.header-inner__search-input {
+    width: 300px;
+    height: 30px;
+    margin: 0 20px;
+}
+
+.header-inner__metastasis{
+    display: flex;
+    margin: 10px;
+}
+
+.header-inner__metastasis-situation--login{
+    color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        margin-right: 10px;
+        text-decoration: none;
+}
+
+.header-inner__metastasis-situation--logout {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.header-inner__metastasis-page--link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+        margin-right: 10px;
+}
+
+.header-inner__metastasis-listing--button {
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: black;
+}

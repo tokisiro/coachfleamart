@@ -1,0 +1,32 @@
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+
+class UserFactory extends Factory
+{
+    protected $model = \App\Models\User::class;
+
+    public function definition()
+    {
+        $faker = \Faker\Factory::create('ja_JP');
+
+        $addressFull = $faker->address();
+        $cleanAddress = preg_replace('/^\d+\s*/', '', $addressFull); // 先頭の数字と空白を除去
+        $address = preg_replace('/^\d+\s*/', '', $cleanAddress);
+
+        $buildingValue = (rand(0, 1) === 0) ? '' : $faker->secondaryAddress();
+        return [
+            'name' => $faker->name(),
+            'icon' => $faker->imageUrl(100, 100), // アイコン用のランダムな画像URL
+            'post_code' => $faker->postcode(),
+            'address' => trim($address),
+            'building' => $faker->secondaryAddress(),
+            'email' => $faker->unique()->safeEmail(),
+            'password' => bcrypt('password'), // パスワードを一定にしたい場合
+        ];
+    }
+
+}

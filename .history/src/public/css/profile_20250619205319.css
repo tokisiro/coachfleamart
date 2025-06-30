@@ -1,0 +1,100 @@
+
+.profile-image__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image__icon-item{
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    margin: 40px 20px;
+    border-radius: 50%;
+}
+
+.profile-image__icon-label{
+    font-weight: bold;
+}
+
+.profile-image__icon-link{
+    margin: 0px 100px;
+    border: 1px solid red ;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.profile-image__icon-link--item{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.profile-tag {
+    border-bottom: 1px solid #333;
+}
+
+.profile-tag__Listing,
+.profile-tag__purchase {
+    border: none;
+    background-color: transparent;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+    color: grey;
+}
+
+.active {
+    color: red;
+    /* 必要に応じて他のスタイルも追加 */
+}
+
+
+
+.profile-list__purchase-card,
+.profile-list__Listing-card {
+    text-decoration: none;
+    margin: 40px 40px;
+}
+
+
+
+
+
+.profile-list__Listing-card--img-item,
+.profile-list__purchase-card--img-item {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: gainsboro;
+}
+
+
+
+.profile-list__Listing-card--content-name,
+.profile-list__purchase-card--content-name {
+    color: black;
+    margin: a 10px;
+}
+
+
+
+
+
+/* 非表示 */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    /* クリックも無効にする */
+    display: none;
+}
+
+/* 表示 */
+.visible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    display: flex;
+}

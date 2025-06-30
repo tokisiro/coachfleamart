@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coachfleamart</title>
+    <link rel="stylesheet" href="/css/sanitize.css">
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+<!--商品詳細画面（ログイン後）-->
+<header class="header">
+    <div class="header-inner">
+        <div class="header-inner__title">
+            <img src="storage/logo.svg" alt="ヘッダーの画像" />
+        </div>
+        <div class="header-inner__search">
+            <input class="header-inner__search-input" type="text">
+        </div>
+        <div class="header-inner__metastasis">
+        @if (Auth::check())
+            <form class="header-inner__metastasis-logout" action="/logout" method="post">
+                @csrf
+                <button class="header-inner__metastasis-logout--link">
+                    ログアウト
+                </button>
+            </form>
+        @endif
+            <div class="header-inner__metastasis-page">
+                <a class="header-inner__metastasis-page--link" href="">
+                    マイページ
+                </a>
+            </div>
+            <div class="header-inner__metastasis-listing">
+                <button class="header-inner__metastasis-listing--button">
+                    出品
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="detail">
+    @foreach ($authors as $author)
+        <div class="detail-img">
+            <img class="detail-img__item" src="" alt="商品画像" src="{{$author->image}}">
+        </div>
+        <div class="detail-content">
+            <form class="detail-content__product" method="post">
+                <div class="detail-content__product-name">
+                    <h3 class="detail-content__product-name--title">
+                    {{$author->name}}
+                    </h3>
+                    <p class="detail-content__product-name--brand">
+                    {{$author->brand_name}}
+                    </p>
+                </div>
+                <div class="detail-content__product-price">
+                {{$author->price}}
+                </div>
+                <div class="detail-content__product-evaluation">
+                    <div class="detail-content__product-evaluation--nice">
+                        <button class="detail-content__product-evaluation--nice-button">
+                            <img class="detail-content__product-evaluation--nice-button-img" src="/storage/star.png" alt="">
+                        </button>
+                        <div class="detail-content__product-evaluation--nice-count">
+                            0
+                        </div>
+                    </div>
+                    <div class="detail-content__product-evaluation--comment">
+                        <div class="detail-content__product-evaluation--comment-button">
+                            <img class="detail-content__product-evaluation--comment-button-img" src="/storage/comment.png" alt="">
+                        </div>
+                        <div class="detail-content__product-evaluation--comment-count">
+                            0
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <form class="detail-content__information" action="">
+                <div class="detail-content__information-button">
+                    <a class="detail-content__information-button--item">
+                        購入手続きへ
+                    </a>
+                </div>
+                <div class="detail-content__information-index">
+                    <h3 class="detail-content__information-index--item">
+                        商品説明
+                    </h3>
+                </div>
+                <div class="detail-content__information-explanation">
+                    <div class="detail-content__information-explanation--item">
+                    {{$author->explanation}}
+                    </div>
+                </div>
+                <div class="detail-content__information-index">
+                    <h3 class="detail-content__information-index--item">
+                        商品の情報
+                    </h3>
+                </div>
+                <div class="detail-content__information-category">
+                    <label class="detail-content__information-category--label">
+                        カテゴリー
+                    </label>
+                    <div class="detail-content__information-category--item">
+                        <!--カテゴリーを表示-->
+                    </div>
+                </div>
+                <div class="detail-content__information-status">
+                    <label class="detail-content__information-status--label">
+                        商品の状態
+                    </label>
+                    <div class="detail-content__information-status--item">
+                        <!--商品の状態を表示-->
+                    </div>
+                </div>
+            </form>
+            <form class="detail-content__comment" action="">
+                <div class="detail-content__comment-index">
+                    <h3 class="detail-content__comment-index--item">
+                        コメント()
+                    </h3>
+                </div>
+                <div class="detail-content__comment-existing">
+                    <div class="detail-content__comment-existing--icon">
+                        <img class="detail-content__comment-existing--icon-img" src="" alt="アイコン">
+                        <label>ユーザー名</label>
+                    </div>
+                    <div class="detail-content__comment-existing--message">
+                        <!--コメント表示-->
+                    </div>
+                    @endforeach
+                </div>
+                <div class="detail-comment__new">
+                @foreach ($comments as $comment)
+                    <label class="detail-content__comment-new--label">
+                        商品へのコメント
+                    </label>
+                    <input class="detail-content__comment-new--input" type="textarea">
+                    
+                </div>
+                <div class="detail-content__comment-button">
+                    <button class="detail-content__comment-button--item">
+                        コメントを送信する
+                    </button>
+                </div>
+            </form>
+        </div>
+        @endforeach
+    </div>
+</main>
+</body>
+</html>
