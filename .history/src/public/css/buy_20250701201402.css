@@ -1,0 +1,101 @@
+
+
+.buy {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.buy-content__product{
+    display: flex;
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    border-bottom: 1px solid #333;
+}
+
+.buy-content__product-name--item{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buy-content__product-image{
+    margin-right: 30px;
+}
+
+.buy-content__product-image--item{
+    width: 150px;
+    height: 150px;
+}
+
+.buy-content__delivery,
+.buy-content__payment{
+    display: block;
+    margin-top: 20px;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.buy-content__payment-label{
+    font-weight: bold;
+}
+
+.buy-content__payment-select--option{
+    margin: 20px;
+    width: 200px;
+    height: 30px;
+    
+}
+
+.buy-content__delivery-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy-content__delivery-item--label{
+    font-weight: bold;
+}
+
+.buy-content__delivery-item{
+    padding: 20px;
+}
+
+.buy-content__delivery-item--change{
+    color: blue;
+    text-decoration: none;
+}
+
+.buy-accounting{
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+    margin-left: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.buy-accounting__table {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid;
+}
+
+.buy-accounting__table-tr{
+    border: 1px solid;
+}
+
+.buy-accounting__button{
+    padding-top: 20px;
+}
+
+.buy-account__button-item{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
