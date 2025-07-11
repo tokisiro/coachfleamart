@@ -1,0 +1,32 @@
+
+.email{
+    height: 100%;
+    width: 100%;
+}
+
+.email-function{
+    background-color: aqua;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px;
+}
+
+.email-function__message-item{
+    font-weight: bold;
+}
+
+.email-function__certification-item{
+    background-color: gainsboro;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    mar
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.email-function__resend-item{
+    text-decoration: none;
+    margin-top: 20px;
+}

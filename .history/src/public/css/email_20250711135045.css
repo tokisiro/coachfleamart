@@ -1,0 +1,12 @@
+
+.email{
+    text-align: center;
+    position: relative;
+}
+
+.email-message,
+.email-certification,
+.email-resend{
+    position: absolute;
+    top: 50;
+}

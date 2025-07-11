@@ -1,0 +1,11 @@
+
+.email{
+    text-align: center;
+    position: relative;
+}
+
+.email-function{
+    position: absolute;
+    top: 50%;
+}
+

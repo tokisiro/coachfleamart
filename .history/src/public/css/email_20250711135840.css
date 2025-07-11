@@ -1,0 +1,14 @@
+
+.email{
+    text-align: center;
+    position: relative;
+}
+
+.email-function{
+    position: absolute;
+    top: 50%;
+}
+
+.email-function__message-item{
+    font-weight: bold;
+}
