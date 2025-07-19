@@ -1,0 +1,12 @@
+.header {
+    max-width: 100%;
+    background-color: black;
+}
+
+.header-title{
+    display: flex;
+    align-items: center;
+        padding: 5px;
+        max-width: 100%;
+        justify-content: space-between;
+}

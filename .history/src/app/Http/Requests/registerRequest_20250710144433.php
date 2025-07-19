@@ -35,7 +35,7 @@ class RegisterRequest extends FormRequest
         'name.required' => 'お名前を入力してください',
         'email.required' => 'メールアドレスを入力してください',
         'email.email' => 'メールアドレスの形式が正しくありません',
-        'email.unique' => '入力されたメールアドレスはすでに使われています',
+        'email.unique' => '入力されたメールアドレスはすでに使われています。',
         'password.required' => 'パスワードを入力してください',
         'password.min' => 'パスワードは8文字以上で入力してください',
         'password_confirmation.required' => '確認用パスワードを入力してください',

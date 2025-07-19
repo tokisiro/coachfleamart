@@ -1,0 +1,178 @@
+
+
+.sell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sell-img__label{
+    font-weight: bold;
+}
+
+.sell-img__icon{
+    border: 1px solid gainsboro;
+    background-color: transparent;
+    width: 700px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sell-img__icon-item {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.sell-img__icon-input {
+    display: none;
+}
+
+.sell-img__icon-button {
+    height: 30px;
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+    padding: 0px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sell-index{
+    text-align: left;
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 700px;
+        margin: 20px;
+}
+
+.sell-index__item{
+    font-weight: bold;
+    font-size: 20px;
+    color: darkgrey;
+}
+
+.sell-category{
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.sell-category__label-item{
+    font-weight: bold;
+}
+
+
+.sell-category__checkbox-label{
+    margin: 7px;
+
+    color: red;
+        font-size: 14px;
+        border: 1px solid red;
+        border-radius: 20px;
+        padding: 5px 20px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+
+.sell-category__checkbox-input{
+    display: none;
+}
+
+.sell-category__checkbox-input:checked + .sell-category__checkbox-label{
+    color: #FFF;
+        background: red;
+        /* 背景色を薄い赤に */
+        border: 1px solid red;
+        /* 淵の線を薄い赤に */
+}
+
+.sell-situation{
+    width: 700px;
+    display: flex;
+        flex-direction: column;
+        /* 縦並び */
+        align-items: flex-start;
+        /* 左寄せ（必要に応じて調整） */
+        gap: 10px;
+        /* 要素間の間隔を調整 */
+}
+
+
+.sell-situation__select,::picker(select){
+    appearance: base-select;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+}
+
+.sell-situation__select {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.sell-situation__select-option:hover,
+::picker(option):hover {
+    background-color: skyblue;
+}
+
+.sell-situation__label,
+.sell-name__label,
+.sell-brand__label,
+.sell-explanation__label,
+.sell-price__label{
+    font-weight: bold;
+}
+
+.sell-situation__select,
+.sell-name__input,
+.sell-brand__input,
+.sell-price__input{
+    width: 700px;
+    height: 30px;
+}
+
+.sell-explanation__input{
+    width: 700px;
+    height: 120px;
+}
+
+.sell-name,
+.sell-brand,
+.sell-explanation,
+.sell-price{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.sell-button__item{
+    width: 700px;
+    height: 30px;
+    margin: 70px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sell-img__error,
+.sell-category__error,
+.sell-situation__error,
+.sell-name__error,
+.sell-explanation__error,
+.sell-price__error{
+    color: red;
+}
