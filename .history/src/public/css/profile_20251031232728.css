@@ -1,0 +1,147 @@
+
+.profile-image__icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.profile-image__icon-header {
+    display: flex;
+    /* img と details を横並びにする */
+    align-items: center;
+    /* 垂直方向の中央揃え (必要であれば) */
+    margin-bottom: 10px;
+    /* 下部との間隔 */
+}
+
+.profile-image__icon-header--item{
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    margin: 40px 20px;
+    border-radius: 50%;
+}
+
+.profile-image__icon-header--details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.profile-image__icon-header--details-label{
+    font-weight: bold;
+    margin-bottom: ;
+}
+
+.profile-image__icon-header--link{
+    margin: 0px 100px;
+    border: 1px solid red ;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.profile-image__icon-header--link-item{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.profile-image__icon-header--details-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-image__icon-header--details-rating-item {
+    display: flex;
+    margin-right: 10px;
+}
+
+.profile-image__icon-header--details-rating-star {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 2px;
+}
+
+.profile-image__icon-header--details-rating-star.filled{
+    background-image: url('/storage/star_filled.png');
+}
+
+.profile-image__icon-header--details-rating-star.empty{
+    background-image: url('/storage/star.png');
+}
+
+.profile-tag {
+    border-bottom: 1px solid #333;
+}
+
+.profile-tag__badge{
+    color: white;
+    background-color: red;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+
+#ListingBtn,
+#purchaseBtn,
+#transactionBtn {
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+    color: grey;
+}
+
+#ListingBtn.active,
+#purchaseBtn.active,
+#transactionBtn.active {
+    color: red;
+}
+
+.profile-list__purchase,
+.profile-list__Listing,
+.profile-list__transaction{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-list__purchase-card,
+.profile-list__Listing-card,
+.profile-list__transaction-card {
+    text-decoration: none;
+    margin: 40px 40px;
+}
+
+.profile-list__Listing-card--img-item,
+.profile-list__purchase-card--img-item,
+.profile-list__transaction-card--img-item {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: gainsboro;
+}
+
+.profile-list__Listing-card--none,
+.profile-list__purchase-card--none,
+.profile-list__transaction-card--none {
+    color: black;
+    margin: 20px 20px;
+}
+
+
+
+.profile-list__transaction-card--img-item-badge{
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 1px 7px;
+    border-radius: 50%;
+}
+
+
+
+

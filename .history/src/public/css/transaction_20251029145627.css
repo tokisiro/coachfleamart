@@ -1,0 +1,156 @@
+.transaction{
+    display: flex;
+}
+.transaction-side{
+    width: 200px;
+    height: 100vh;
+    background-color: gray;
+}
+
+.transaction-side__list-link{
+    text-decoration: none;
+}
+
+.transaction-side__list-link--name{
+    background-color: white;
+    width: 100px;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
+    color: black;
+}
+
+.transaction-side__title{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.transaction-main{
+    width: 100%;
+}
+
+.transaction-main__title{
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.transaction-main__title-img{
+    background-color: gainsboro;
+    width: 70px;
+    height: 70px;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+.transaction-main__title-name{
+    font-size: 20px;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.transaction-main__title-button{
+    margin: 25px 5px 0 auto;
+    background-color: red;
+    color: white;
+    height: 25px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.transaction-main__product{
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.transaction-main__product-img{
+    width: 100px;
+    margin: 10px 20px;
+}
+
+.transaction-main__product-tag--name{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.transaction-main__message_item{
+    width: 80%;
+    margin: 10px ;
+}
+
+.transaction-main__message-chat{
+    height: 30%;
+}
+
+.transaction-main__message_img{
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction-main__message-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.transaction-main__message-chat{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction-main__message-chat--item{
+    align-items: flex-start;
+        /* パディングは内側に設定 */
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+}
+
+.transaction-main__message-chat--item-user{
+    display: flex;
+}
+
+.transaction-main__message-chat--item-user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    margin: 5px 5px;
+}
+
+.message-item--right {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message-item--right .transaction-main__message-chat--item-user {
+    flex-direction: row-reverse;
+}
+
+.message-item--right .transaction-main__message-chat--item-user-img {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.message-item--right .transaction-main__message-chat--item-content {
+    text-align: right;
+    display: inline-block;
+    background-color: gainsboro;
+        border-radius: 5px;
+}
+
+.transaction-main__message-chat--item-content{
+    background-color: gainsboro;
+    border-radius: 5px;
+}

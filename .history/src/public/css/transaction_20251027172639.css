@@ -1,0 +1,40 @@
+.transaction{
+    display: flex;
+}
+.transaction-side{
+    width: 200px;
+    background-color: gray;
+}
+
+.transaction-side__title{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.transaction-main__title{
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.transaction-main__title-img{
+    background-color: gainsboro;
+    width: 70px;
+    height: 70px;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+.transaction-main__title-name{
+    font-size: 20px;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.transaction-main__title-button{
+    margin: 25px 0 0 auto;
+    background-color: red;
+    color: white;
+    height: 25px;
+    padding: 1;
+}

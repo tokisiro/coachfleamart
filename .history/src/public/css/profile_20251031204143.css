@@ -1,0 +1,166 @@
+
+.profile-image__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image__icon-item{
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    margin: 40px 20px;
+    border-radius: 50%;
+}
+
+.profile-image__icon-label{
+    font-weight: bold;
+}
+
+.profile-image__icon-link{
+    margin: 0px 100px;
+    border: 1px solid red ;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.profile-image__icon-link--item{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.profile-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* 必要に応じて調整 */
+}
+
+.profile-rating__item {
+    display: flex;
+    /* 星画像を横に並べるため */
+    margin-right: 10px;
+    /* 星と件数の間にスペース */
+}
+
+.profile-rating__star {
+    /* すべての星に共通のスタイル */
+    display: inline-block;
+    /* インラインブロック要素にする */
+    width: 24px;
+    /* 星画像の幅 */
+    height: 24px;
+    /* 星画像の高さ */
+    background-size: contain;
+    /* 背景画像を要素に合わせる */
+    background-repeat: no-repeat;
+    /* 背景画像の繰り返しを防止 */
+    background-position: center;
+    /* 背景画像を中央に配置 */
+    margin-right: 2px;
+    /* 星と星の間のスペース */
+}
+
+.profile-rating__star.filled {
+    /* 塗りつぶされた星の画像 */
+    background-image: url('storage/star_filled.png');
+    /* 塗りつぶされた星画像のパスを指定 */
+    /* public/images/star_filled.png に配置していると仮定 */
+}
+
+.profile-rating__star.empty {
+    /* 空の星の画像 */
+    background-image: url('storage/star.png');
+    /* 空の星画像のパスを指定 */
+    /* public/images/star_empty.png に配置していると仮定 */
+}
+
+.profile-rating__item-count {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 5px;
+    /* 星の横に表示される評価件数のスタイル */
+}
+
+.profile-rating__text {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.no-rating-message {
+    color: #999;
+    font-style: italic;
+}
+
+.profile-tag {
+    border-bottom: 1px solid #333;
+}
+
+.profile-tag__badge{
+    color: white;
+    background-color: red;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+
+#ListingBtn,
+#purchaseBtn,
+#transactionBtn {
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+    color: grey;
+}
+
+#ListingBtn.active,
+#purchaseBtn.active,
+#transactionBtn.active {
+    color: red;
+}
+
+.profile-list__purchase,
+.profile-list__Listing,
+.profile-list__transaction{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-list__purchase-card,
+.profile-list__Listing-card,
+.profile-list__transaction-card {
+    text-decoration: none;
+    margin: 40px 40px;
+}
+
+.profile-list__Listing-card--img-item,
+.profile-list__purchase-card--img-item,
+.profile-list__transaction-card--img-item {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: gainsboro;
+}
+
+.profile-list__Listing-card--none,
+.profile-list__purchase-card--none,
+.profile-list__transaction-card--none {
+    color: black;
+    margin: 20px 20px;
+}
+
+
+
+.profile-list__transaction-card--img-item-badge{
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 1px 7px;
+    border-radius: 50%;
+}
+
+
+
+

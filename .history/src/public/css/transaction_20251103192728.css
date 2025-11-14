@@ -1,0 +1,272 @@
+.transaction{
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+.transaction-side{
+    width: 200px;
+    height: 100%;
+    background-color: gray;
+}
+
+.transaction-side__list-link{
+    text-decoration: none;
+}
+
+.transaction-side__list-link--name{
+    background-color: white;
+    width: 100px;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
+    color: black;
+}
+
+.transaction-side__title{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.transaction-main{
+    width: 100%;
+}
+
+.transaction-main__title{
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.transaction-main__title-img{
+    background-color: gainsboro;
+    width: 70px;
+    height: 70px;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+.transaction-main__title-name{
+    font-size: 20px;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.transaction-main__title-button{
+    margin: 25px 5px 0 auto;
+    background-color: red;
+    color: white;
+    height: 25px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.transaction-main__product{
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.transaction-main__product-img{
+    width: 100px;
+    margin: 10px 20px;
+}
+
+.transaction-main__product-tag--name{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.transaction-main__message-input--text{
+    width: 80%;
+    margin: 10px ;
+}
+
+.transaction-main__message-chat{
+    height: 30%;
+}
+
+.transaction-main__message-input--img{
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction-main__message-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.transaction-main__message-chat{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.transaction-main__message-chat--item{
+    align-items: flex-start;
+    border-radius: 10px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-main__message-chat--item-image{
+    width: 100px;
+}
+
+.message-item--right {
+    align-items: flex-end;
+    margin-left: auto;
+}
+
+.transaction-main__message-chat--item-user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.transaction-main__message-chat--item-user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    margin: 5px 5px;
+    object-fit: cover;
+}
+
+.message-item--right {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message-item--right .transaction-main__message-chat--item-user {
+    flex-direction: row-reverse;
+}
+
+.message-item--right .transaction-main__message-chat--item-user-img {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.message-item--right .transaction-main__message-chat--item-content {
+    display: inline-block;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+.transaction-main__message-chat--item-content{
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+}
+
+.transaction-main__message-chat--item-action{
+    text-align: right;
+}
+
+.transaction-main__message-chat--item-action-edit,
+.transaction-main__message-chat--item-action-delete{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.modal-button--confirm,
+.modal-button--submit {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-button--cancel {
+    background-color: #6c757d;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.transaction-main__modal{
+    background-color: #aaa;
+}

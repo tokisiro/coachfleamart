@@ -1,0 +1,22 @@
+.transaction{
+    display: flex;
+}
+.transaction-side{
+    width: 200px;
+    background-color: gray;
+}
+
+.transaction-side__title{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.transaction-main__title{
+    display: flex;
+}
+
+.transaction-main__title-img{
+    width: 50px;
+    
+}

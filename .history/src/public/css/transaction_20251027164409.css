@@ -1,0 +1,9 @@
+.transaction-side{
+    width: 500px;
+    height: 1;
+    background-color: gray;
+}
+
+.transaction-side__title{
+    color: white;
+}

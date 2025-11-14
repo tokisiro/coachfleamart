@@ -1,0 +1,117 @@
+.transaction{
+    display: flex;
+}
+.transaction-side{
+    width: 200px;
+    height: 100vh;
+    background-color: gray;
+}
+
+.transaction-side__title{
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.transaction-main{
+    width: 100%;
+}
+
+.transaction-main__title{
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.transaction-main__title-img{
+    background-color: gainsboro;
+    width: 70px;
+    height: 70px;
+    margin: 10px 20px;
+    border-radius: 50%;
+}
+
+.transaction-main__title-name{
+    font-size: 20px;
+    margin: auto 0;
+    font-weight: bold;
+}
+
+.transaction-main__title-button{
+    margin: 25px 5px 0 auto;
+    background-color: red;
+    color: white;
+    height: 25px;
+    padding: 0px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.transaction-main__product{
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+.transaction-main__product-img{
+    width: 200px;
+    margin: 10px 20px;
+}
+
+.transaction-main__product-tag--name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.transaction-main__message_item{
+    width: 80%;
+    margin: 10px ;
+}
+
+.transaction-main__message-chat{
+    height: 30%;
+}
+
+.transaction-main__message_img{
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction-main__message-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.transaction-main__message-chat--item-user{
+    display: flex;
+}
+
+.transaction-main__message-chat--item-user-name{
+    margin: 10px 10px;
+}
+
+.transaction-main__message-chat--item-user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    margin: 5px 5px;
+}
+
+/* 左側のメッセージ (相手) */
+.message-item--left {
+    te
+}
+
+/* 右側のメッセージ (自分) */
+.message-item--right {
+    margin-left: auto;
+}
